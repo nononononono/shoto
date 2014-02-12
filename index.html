@@ -1,0 +1,97 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<script type="text/javascript" src="main.js"></script>
+		<style>
+			body {
+				margin: 0;
+			}
+
+			#backDiv1 {
+				background: #f8f7e5 url(back1.jpg) no-repeat center top;
+			}
+			#backDiv2 {
+				background: #f8f7e5 url(back2.jpg) no-repeat center top;
+				
+			}
+			.back {
+				display:table;     
+				border-collapse:collapse;
+				width:100%;
+				height: 100vh;
+				position: absolute;
+				top: o;
+			}
+			.visibleDiv {
+				visibility: visible;
+				opacity: 100;
+			}
+
+			.invisibleDiv {
+				visibility: hidden;
+				opacity: 0;
+				transition: opacity 0.7s ease-in-out, visibility 0 0.7s;
+			}
+
+			.container {
+				position: absolute;
+				top: 0;
+				display:table;     
+				border-collapse:collapse;
+				width:100%;
+				height: 100vh;
+			}          
+			.layout {     
+				display:table-row;  
+				height: 100%;  
+			}            
+			.centered {
+				display:table-cell;   
+				text-align:center;  
+				vertical-align:middle;     
+			}            
+			
+			a:link ,a:visited {
+				font-family: "Verdana";
+				font-size: 32px;
+				color: white;
+				text-decoration: underline;
+			}
+
+			a:hover, a:active {
+				font-family: "Verdana";
+				font-size: 32px;
+				color: white;
+				text-decoration: none;
+			}
+
+			.adviceText {
+				font-family: "Verdana";
+				font-size: 32px;
+				color: white;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="backDiv1" class="back">
+		<div id="containerDiv2" class="container">
+			<div id="layoutDiv2" class="layout">
+				<div id="mainDiv2" class="centered">
+					<span id="adviceText" class="adviceText">УСПОКОЙСЯ ВСЕ ХОРОШО</span>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div id="backDiv2" class="back">
+		</div>
+		<div id="containerDiv" class="container">
+			<div id="layoutDiv" class="layout">
+				<div id="mainDiv" class="centered">
+					<a id="mainButton" href="#" class="mainButton">Пожаловаться</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
